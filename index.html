@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Burn Prediction</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <video autoplay muted loop class="bg-video">
+        <source src="../static/1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <h2>Enter Details:</h2>
+        <form action="/predict" method="post">
+            
+            <div class="form-group">
+                <label for="Gender"><strong>Gender:</strong></label>
+                <select id="Gender" name="Gender" class="form-control">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-grou">
+                <label for="Age"><strong>Age:</strong></label>
+                <input type="number" id="Age" name="Age" class="form-control">
+            </div>
+            <div class="form-gro">
+                <label for="Height"><strong>Height (cm):</strong></label>
+                <input type="number" id="Height" name="Height" class="form-control">
+            </div>
+            <div class="form-gr">
+                <label for="Weight"><strong>Weight (kg):</strong></label>
+                <input type="number" id="Weight" name="Weight" class="form-control">
+            </div>
+            <div class="form-g">
+                <label for="Duration"><strong>Duration (minutes):</strong></label>
+                <input type="number" id="Duration" name="Duration" class="form-control">
+            </div>
+            <div class="form-">
+                <label for="Heart_Rate"><strong>Heart Rate (bpm):</strong></label>
+                <input type="number" id="Heart_Rate" name="Heart_Rate" class="form-control">
+            </div>
+            <div class="form">
+                <label for="Body_Temp"><strong>Body Temperature (°C):</strong></label>
+                <input type="number" id="Body_Temp" name="Body_Temp" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
